@@ -1,0 +1,138 @@
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #4c9141;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #dee7db;
+}
+
+.container {
+  width: 1440px;
+  margin: 0px auto;
+  .bgTitle {
+    color: white;
+    padding-top: 40px;
+    text-align: center;
+    height: 100px;
+    background-color: #3d7434;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5px;
+  }
+}
+
+.main {
+  padding: 50px 0;
+  margin: 0px auto;
+}
+
+.main h1 {
+  font-size: 42px;
+  color: #333;
+  font-weight: 700;
+}
+
+.main p {
+  font-size: 18px;
+  color: #687074;
+  width: 70%;
+  margin: 15px auto;
+}
+
+.main p a {
+  text-decoration: none;
+  color: #ec1c23;
+  font-weight: 900;
+}
+
+.main ul {
+  margin-top: 50px;
+  padding-left: 0px;
+}
+
+.main ul li {
+  padding: 10px 15px;
+  border: 2px solid #333;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  color: #333;
+  width: 120px;
+}
+
+.main ul li.active,
+.main ul li:hover {
+  background-color: #4c9141;
+  color: #fff;
+  border: 2px solid #3d7434;
+}
+
+.main .container-fluid {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1440px;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  overflow: hidden;
+  padding: 0;
+
+  .catego {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    margin: 16px;
+    transition: all 5s ease-in-out;
+  }
+  .caption {
+    display: none;
+    position: absolute;
+    top: 45%;
+    left: 38%;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 15px;
+  }
+  img {
+    border: 2px solid #4c9141;
+    border-radius: 8px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .main .container-fluid img {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .container-fluid {
+    width: 80vw;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    width: 70vw;
+  }
+}
+@media (max-width: 1024px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5px;
+  }
+}
